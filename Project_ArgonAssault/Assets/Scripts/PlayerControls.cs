@@ -5,14 +5,17 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour
 {
-   
+   [SerializeField] float controlSpeed = 10f;
     // Update is called once per frame
     void Update()
     {
         float xThrow = Input.GetAxis("Horizontal");
-        Debug.Log(xThrow);
-
         float yThrow = Input.GetAxis("Vertical");
-        Debug.Log(yThrow);
+
+        float xOffset = xThrow * Time.deltaTime * controlSpeed;
+        float newXPos = transform.localPosition.x + xOffset;
+        
+        transform.localPosition = new Vector3 
+        (newXPos, transform.localPosition.y, transform.localPosition.z);
     }
 }
