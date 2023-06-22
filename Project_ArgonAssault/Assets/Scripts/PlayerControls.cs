@@ -56,7 +56,6 @@ public class PlayerControls : MonoBehaviour
 
     void ProcessFiring()
     {
-            if (fire.Readval<float>() > 0.5)
             if (Input.GetButton("Fire1"))
 
             {
