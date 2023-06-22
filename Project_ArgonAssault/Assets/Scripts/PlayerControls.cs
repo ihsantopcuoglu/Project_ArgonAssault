@@ -15,12 +15,15 @@ public class PlayerControls : MonoBehaviour
    [SerializeField] float positionYawFactor = 2f;
    [SerializeField] float controlRollFactor = -20f;
 
+   
+
     float xThrow, yThrow;
     
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     
@@ -49,5 +52,19 @@ public class PlayerControls : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
         transform.localPosition = new Vector3 (clampedXPos, clampedYPos, transform.localPosition.z);
+    }
+
+    void ProcessFiring()
+    {
+            if (fire.Readval<float>() > 0.5)
+            if (Input.GetButton("Fire1"))
+
+            {
+                Debug.Log("I'm shooting");
+            }
+            else
+            {
+                Debug.Log("I'm not shooting");
+            }
     }
 }
