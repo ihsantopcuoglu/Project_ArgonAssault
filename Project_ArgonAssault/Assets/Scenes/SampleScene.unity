@@ -484,6 +484,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 02d820be370ce2546aeabe88da940cee, type: 3}
   m_PrefabInstance: {fileID: 1437013610}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &887595322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 205024555051289719, guid: b51d73dbf79426a45a56b44594e2768c, type: 3}
+  m_PrefabInstance: {fileID: 205024556632300076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &918774019
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +963,11 @@ Transform:
   m_Father: {fileID: 1111497154}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1885041457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5370711223750699639, guid: b51d73dbf79426a45a56b44594e2768c, type: 3}
+  m_PrefabInstance: {fileID: 205024556632300076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1959321715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1091,6 +1101,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3434768542852356373, guid: b51d73dbf79426a45a56b44594e2768c, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434768542852356373, guid: b51d73dbf79426a45a56b44594e2768c, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1885041457}
+    - target: {fileID: 3434768542852356373, guid: b51d73dbf79426a45a56b44594e2768c, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 887595322}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b51d73dbf79426a45a56b44594e2768c, type: 3}
 --- !u!4 &3434768542851990836 stripped
